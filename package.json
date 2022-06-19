@@ -4,15 +4,15 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
+    "test": "mocha --require ts-node/register test/**/*.test.ts",
     "build": "tsc",
     "watch": "tsc -w",
-    "eslint": "eslint src/**/*.ts",
-    "eslint:fix": "eslint src/**/*.ts --fix",
-    "format": "prettier -w src/**/*.ts",
-    "format:check": "prettier -c src/**/*.ts",
-    "lint": "npm-run-all eslint format:check",
-    "lint:fix": "npm-run-all eslint:fix format",
-    "test": "mocha --require ts-node/register test/**/*.test.ts"
+    "eslint:check": "eslint src/**/*.ts test/**/*.test.ts",
+    "eslint:fix": "eslint src/**/*.ts test/**/*.test.ts --fix",
+    "format:check": "prettier -c src/**/*.ts test/**/*.test.ts",
+    "format:fix": "prettier -w src/**/*.ts test/**/*.test.ts",
+    "lint:check": "npm-run-all eslint:check format:check",
+    "lint:fix": "npm-run-all eslint:fix format:fix"
   },
   "author": "",
   "license": "",
