@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
-    "target": "esnext",
-    "module": "commonjs",
+    "target": "es2022",
+    "module": "node16",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "rootDir": "./src",
