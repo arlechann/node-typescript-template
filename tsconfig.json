@@ -2,7 +2,8 @@
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
     "target": "es2022",
-    "module": "node16",
+    "module": "es2022",
+    "moduleResolution": "node16",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "rootDir": "./src",
@@ -17,6 +18,8 @@
     "./src/**/*"
   ],
   "exclude": [
+    "./dist",
+    "./node_modules",
     "./src/.gitkeep"
   ]
 }
