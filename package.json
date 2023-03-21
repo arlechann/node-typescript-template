@@ -10,12 +10,12 @@
     "build": "tsc",
     "watch": "tsc -w",
     "dev": "nodemon -- src/index.ts",
-    "eslint:check": "eslint \"src/**/*.ts\" \"test/**/*.test.ts\"",
-    "eslint:fix": "eslint \"src/**/*.ts\" \"test/**/*.test.ts\" --fix",
-    "format:check": "prettier -c \"src/**/*.ts\" \"test/**/*.test.ts\"",
-    "format:fix": "prettier -w \"src/**/*.ts\" \"test/**/*.test.ts\"",
-    "lint:check": "npm-run-all eslint:check format:check",
-    "lint:fix": "npm-run-all eslint:fix format:fix"
+    "lint:check": "eslint \"src/**/*.ts\"",
+    "lint:fix": "eslint \"src/**/*.ts\" --fix",
+    "lint": "npm run lint:fix",
+    "format:check": "prettier -c \"src/**/*.ts\"",
+    "format:fix": "prettier -w \"src/**/*.ts\"",
+    "format": "npm run format:fix"
   },
   "author": "",
   "license": "",
